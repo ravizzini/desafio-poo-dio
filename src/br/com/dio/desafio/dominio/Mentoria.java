@@ -11,6 +11,11 @@ public class Mentoria extends Conteudo{
         return XP_PADRAO + 20d;
     }
 
+    @Override
+    public double calcularPercentual() {
+        return score;
+    }
+
     public Mentoria() {
     }
 

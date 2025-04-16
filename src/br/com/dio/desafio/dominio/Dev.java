@@ -16,6 +16,7 @@ public class Dev {
         Optional<Conteudo> conteudo = this.conteudosInscritos.stream().findFirst();
         if(conteudo.isPresent()) {
             this.conteudosConcluidos.add(conteudo.get());
+
             this.conteudosInscritos.remove(conteudo.get());
         } else {
             System.err.println("Você não está matriculado em nenhum conteúdo!");
@@ -35,6 +36,20 @@ public class Dev {
                 .stream()
                 .mapToDouble(Conteudo::calcularXp)
                 .sum();*/
+    }
+
+    public double calcularPercentualConcluido(){
+        Iterator<Conteudo> iterator1 = this.conteudosConcluidos.iterator();
+        double percentualConcluido = 0;
+        double soma1 = 0;
+        while(iterator1.hasNext()){
+            double next = iterator1.next().calcularPercentual();
+            soma1 += next;
+            percentualConcluido = (soma1 * 100)/conteudosConcluidos.size();
+
+        }
+
+        return percentualConcluido;
     }
 
 

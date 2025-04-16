@@ -37,11 +37,26 @@ public class Main {
         devCamila.setNome("Camila");
         devCamila.inscreverBootcamp(bootcamp);
         System.out.println("Conteúdos Inscritos Camila:" + devCamila.getConteudosInscritos());
+
         devCamila.progredir();
+        System.out.println("Conteúdos Concluídos Camila:" + devCamila.getConteudosConcluidos());
+        System.out.println("Percentual Concluído:" + devCamila.calcularPercentualConcluido());
+        System.out.println("XP:" + devCamila.calcularTotalXp());
+
         devCamila.progredir();
+        System.out.println("Conteúdos Concluídos Camila:" + devCamila.getConteudosConcluidos());
+        System.out.println("Percentual Concluído:" + devCamila.calcularPercentualConcluido());
+        System.out.println("XP:" + devCamila.calcularTotalXp());
+
+        devCamila.progredir();
+        System.out.println("Conteúdos Concluídos Camila:" + devCamila.getConteudosConcluidos());
+        System.out.println("Percentual Concluído:" + devCamila.calcularPercentualConcluido());
+        System.out.println("XP:" + devCamila.calcularTotalXp());
+
         System.out.println("-");
         System.out.println("Conteúdos Inscritos Camila:" + devCamila.getConteudosInscritos());
         System.out.println("Conteúdos Concluídos Camila:" + devCamila.getConteudosConcluidos());
+        System.out.println("Percentual Concluído:" + devCamila.calcularPercentualConcluido());
         System.out.println("XP:" + devCamila.calcularTotalXp());
 
         System.out.println("-------");
@@ -51,8 +66,11 @@ public class Main {
         devJoao.inscreverBootcamp(bootcamp);
         System.out.println("Conteúdos Inscritos João:" + devJoao.getConteudosInscritos());
         devJoao.progredir();
-        devJoao.progredir();
-        devJoao.progredir();
+        System.out.println("Conteúdos Concluidos João:" + devJoao.getConteudosConcluidos());
+        System.out.println("Percentual Concluído:" + devJoao.calcularPercentualConcluido());
+        System.out.println("XP:" + devJoao.calcularTotalXp());
+
+
         System.out.println("-");
         System.out.println("Conteúdos Inscritos João:" + devJoao.getConteudosInscritos());
         System.out.println("Conteúdos Concluidos João:" + devJoao.getConteudosConcluidos());

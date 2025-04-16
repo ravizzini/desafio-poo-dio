@@ -4,10 +4,17 @@ public abstract class Conteudo {
 
     protected static final double XP_PADRAO = 10d;
 
+    protected static final Integer score = 1;
+
     private String titulo;
     private String descricao;
 
+
+
+
     public abstract double calcularXp();
+
+    public abstract double calcularPercentual();
 
     public String getTitulo() {
         return titulo;
