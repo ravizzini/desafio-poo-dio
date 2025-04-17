@@ -136,6 +136,9 @@ Vejamos alguns Subparadigmas do Paradigma Declarativo e exemplos linguagens de p
 
 <h2> 🤝 Contribuindo </h2>
 
+Adicionado o metodo para calcular o percentual dos cursos concluidos ao longo do bootcamp a cada evolução.
+Atualizado por Victor Ravizzini Coelho 
+
 <p>
 Este repositório foi criado para fins de estudo, então contribua com ele.<br>
 Se te ajudei de alguma forma, ficarei feliz em saber. E caso você conheça alguém que se identidique com o conteúdo, não deixe de compatilhar.<br>
