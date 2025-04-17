@@ -41,11 +41,12 @@ public class Dev {
     public double calcularPercentualConcluido(){
         Iterator<Conteudo> iterator1 = this.conteudosConcluidos.iterator();
         double percentualConcluido = 0;
-        double soma1 = 0;
+        double cursosConcluidos = 0;
         while(iterator1.hasNext()){
             double next = iterator1.next().calcularPercentual();
-            soma1 += next;
-            percentualConcluido = (soma1 * 100)/conteudosConcluidos.size();
+            cursosConcluidos += next;
+            int totalDeCursos = conteudosConcluidos.size() + conteudosInscritos.size();
+            percentualConcluido = (cursosConcluidos * 100)/totalDeCursos;
 
         }
 
